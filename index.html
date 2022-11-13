@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="./animaciones.css">
     <title>🍷 Vinos</title>
 </head>
+
 <body>
     <div class="section-container header-container">
         <header class="header">
@@ -16,26 +18,26 @@
                 <img src="./assets/vinos logo.png" alt="logo">
             </div>
             <nav class="navbar">
-                <div class="menu-label">  
-                <i class="fa-solid fa-bars menu-icon"></i>
+                <div class="menu-label">
+                    <i class="fa-solid fa-bars menu-icon"></i>
                 </div>
                 <ul class="navbar-list">
                     <li><a href="#hero">Tienda</a></li>
                     <li><a href="#info">Descubrinos</a></li>
-                    <li><a href="#">Nuestros Vinos</a></li>
+                    <li><a href="#products">Nuestros Vinos</a></li>
                     <li><a href="#">Contacto</a></li>
                     <li><a href="#">Login</a></li>
                 </ul>
-                <div class="cart-label">   
-                <i class="fa-solid fa-cart-shopping cart-icon" id="carrito"></i>
+                <div class="cart-label" onclick="mostrarCarrito()">
+                    <i class="fa-solid fa-cart-shopping cart-icon" id="carrito"></i>
                 </div>
                 <div class="cart">
                     <h2>Tus Vinitos</h2>
-            
+
                     <div class="cart-container"></div>
-            
+
                     <span class="divider"></span>
-            
+
                     <div class="cart-total">
                         <p>Total:</p>
                         <span class="total">0.00 </span>
@@ -47,7 +49,7 @@
             </nav>
         </header>
     </div>
-            
+
     <main>
         <!-- hero -->
         <section id="hero">
@@ -55,9 +57,10 @@
                 <!-- <img src="./assets/hero vino.jpg" alt="" class="hero-img"> -->
                 <h1>Encontra nuevos vinos y los clasicos de siempre</h1>
                 <p>
-                    "Vinos", es la tienda virtual de vinos con mas variedad del mercado, descubri una forma simple de llevar al paladar solo lo mejor.
+                    "Vinos", es la tienda virtual de vinos con mas variedad del mercado, descubri una forma simple de
+                    llevar al paladar solo lo mejor.
                 </p>
-                <a href="#" class="btn-hero">Nuestros Vinos</a>
+                <a href="#products" class="btn-hero">Nuestros Vinos</a>
             </div>
         </section>
         <!-- info -->
@@ -68,40 +71,86 @@
                     <img src="./assets/wine-bottle-solid.svg" alt="">
                     <h3>Conocé</h3>
                     <p>Navega por nuestra basta vinoteca y descubri nuevos sabores</p>
-            </div>
-            <div class="info-card">
-                <img src="./assets/wine-bottle-solid.svg" alt="">
-                <h3>Agrega los que mas te gusten</h3>
-                <p>Una vez que selecciones tus favoritos, cargalos en el carrito y al toque van para tu casa</p>
-            </div>
-            <div class="info-card">
-                <img src="./assets/wine-bottle-solid.svg" alt="">
-                <h3>¡Disfruta!</h3>
-                <p>
-                    Y por ultimo, disfruta la experiencia y relajate con un buen vino.
-                </p>
-            </div>
+                </div>
+                <div class="info-card">
+                    <img src="./assets/wine-bottle-solid.svg" alt="">
+                    <h3>Agrega los que mas te gusten</h3>
+                    <p>Una vez que selecciones tus favoritos, cargalos en el carrito y al toque van para tu casa</p>
+                </div>
+                <div class="info-card">
+                    <img src="./assets/wine-bottle-solid.svg" alt="">
+                    <h3>¡Disfruta!</h3>
+                    <p>
+                        Y por ultimo, disfruta la experiencia y relajate con un buen vino.
+                    </p>
+                </div>
             </div>
         </section>
         <!-- DESCUBRINOS -->
         <section id="descubrinos">
             <div class="descubrinos-info">
                 <h2>Somos especialistas en crear momentos</h2>
-            <div class="descubrinos-text">     
-                <p>Te invitamos a que seas parte de una comunidad amante del buen vino y experimentes nuevos sabores y aromas que despiertan los sentidos.</p>
-            </div>    
+                <div class="descubrinos-text">
+                    <p>Te invitamos a que seas parte de una comunidad amante del buen vino y experimentes nuevos sabores
+                        y aromas que despiertan los sentidos.</p>
+                </div>
+            </div>
+            <div class="descubrinos-bar">
+                <h3>Vinos</h3>
+            </div>
+            <div class="descubrinos-cards">
+                <img src="./assets/descubrinos vino 2.jpg" alt="felicidad" class="viejis">
+                <img src="./assets/descubrinos vino 3.jpg" alt="brindis">
+                <img src="./assets/vista-lateral-mujer-bebe-vaso-vino-tinto_141793-5180.webp" alt="juntada"
+                    class="copa">
+                <img src="./assets/descubrinos vino 4.jpg" alt="placer" class="placer">
+            </div>
+        </section>
+        <!-- products -->
+        <section id="products">
+            <h2>Elegí tu Favorito!</h2>
+            <div class="categories">
+                <button class="category active" data-category="all">🍷Todas</button>
+                <button class="category" data-category="malbec">Malbec</button>
+                <button class="category" data-category="cabernet">Cabernet</button>
+                <button class="category" data-category="rose">Rose</button>
+                <button class="category" data-category="blanc">Blanco</button>
+            </div>
+
+            <!-- products -->
+            <div class="products-container"></div>
+            <button class="btn-load">Ver Mas</button>
+        </section>
+    </main>
+    <div class="footer-title">
+        <h3>Contactanos!</h3>
+    </div>
+    <div class="formulario">
+        <div class="form-container">
+            <form>
+                <label for="nombre"></label>
+                <input type="text" name="nombre" placeholder="Tu Nombre" id="input-contact">
+                <label for="email"></label>
+                <input type="email" name="email" placeholder="Tu Email" id="input-contact">
+                <label for="mensaje"></label>
+                <textarea name="mensaje" placeholder="escribi tu mensaje" id="input-contact">
+                </textarea>
+                <button class="btn-footer">Enviar</button>
+            </form>
         </div>
-        <div class="descubrinos-bar">
-            <h3>Vinos</h3>
+    </div>
+    <footer class="footer">
+        <div class="links-contacto">
+            <p>Codeado por Juane copyright © 2022</p>
+            <div class="btn-container">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </div>
         </div>
-        <div class="descubrinos-cards">
-            <img src="./assets/descubrinos vino 2.jpg" alt="felicidad" class="viejis">
-            <img src="./assets/descubrinos vino 3.jpg" alt="brindis">
-            <img src="./assets/vista-lateral-mujer-bebe-vaso-vino-tinto_141793-5180.webp" alt="juntada" class="copa">
-            <img src="./assets/descubrinos vino 4.jpg" alt="placer" class="placer">
-        </div>
-    </section>
-</main>
+    </footer>
+    <script src="./data.js"></script>
+    <script src="./main.js"></script>
 </body>
+
 </html>
-            
