@@ -1,0 +1,73 @@
+@media (max-width: 992px) {
+    .navbar {
+        gap: 10px
+    }
+
+    .navbar-list {
+        position: absolute;
+        top: 65px;
+        left: 5%;
+        right: 5%;
+        width: 90%;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 45px 30px;
+        gap: 25px;
+        z-index: 2;
+        display: none;
+    }
+
+    .section-container header-container {
+        max-width: 992px;
+    }
+    /* hero */
+    .hero-info {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .hero-info h1 {
+        width: 90%;
+        max-width: 500px;
+        min-width: unset;
+    } 
+    
+    .hero-info p {
+        width: 60%;
+        max-width: 600px;
+    }
+
+    #info h2 {
+        text-align: center;
+        width: 80%;
+    }
+
+    .info-cards-container {
+        max-width: 80%;
+    }
+    /* descubrinos */
+    #descubrinos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .descubrinos-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .descubrinos-cards {
+        flex-direction: column;
+    }
+
+    .descubrinos-cards img {
+        width: 80%;
+    }
+}
+
