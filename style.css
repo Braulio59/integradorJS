@@ -94,7 +94,7 @@ header {
     right: 0;
     padding: 50px 30px;
     background: rgb(0,0,0);
-background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(139,16,1,1) 66%, rgba(153,8,8,1) 83%);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 25%, rgba(139,16,1,1) 93%, rgba(153,8,8,1) 99%);
     border-left: 1px solid var(--background);
     display: flex;
     flex-direction: column;
@@ -115,7 +115,34 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(139,16,1,1) 66%, rgba(
     display: flex;
     flex-direction: column;
     gap: 20px;
+}  
+
+.btn-buy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    padding:15px 10px;
+    background: var(--background);
+    color: var(--text-black);
+    border: none;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+    cursor: pointer;
 } 
+
+.btn-delete {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+    background: var(--background);
+    color: var(--text-black);
+    border: none;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
 
 /* ocultar barra de scroll del carrito */
 

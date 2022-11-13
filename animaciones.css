@@ -68,6 +68,16 @@ animacion HOVER */
     transition: all 0.2s ease-in;
 }
 
+.btn-buy:hover {
+    background: var(--btn-secundari);
+    color: var(--background);
+    } 
+
+    .btn-delete:hover {
+        background: grey ;
+        color: var(--background);
+    }
+
 
 .btn-hero {
     transition: all 0.3s ease-in;
@@ -96,4 +106,5 @@ animacion HOVER */
 .btn-footer:hover {
     background-color: var(--btn-secundari); 
     transform: scale(1.1);
-}
+} 
+
