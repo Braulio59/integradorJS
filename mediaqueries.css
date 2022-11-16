@@ -18,18 +18,31 @@
         font-size: 20px;
     }
 
-    .descubrinos-info {
+
+    #descubrinos h2 {
         display: flex;
-        flex: 1;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-size: 23px;
+    } 
+
+    #descubrinos p {
+        display: flex;
+        font-size: 15px;
+    }
+/* 
+    .descubrinos-info h2 {
+        display: flex;
         flex-direction: column;
         text-align: center;
         align-items: center;
-        font-size: 23px;
+        font-size: px;
     }
 
-    .descubrinos-text {
+    .descubrinos-text p {
         display: flex;
         text-align: center;
-        
-    }
+        } */
+
 }
