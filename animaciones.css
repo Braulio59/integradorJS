@@ -106,5 +106,11 @@ animacion HOVER */
 .btn-footer:hover {
     background-color: var(--btn-secundari); 
     transform: scale(1.1);
-} 
+}  
+
+.btn-agregar:hover {
+    color: var(--background);
+    background-color: var(--btn-secundari);
+    transform: scale(1.0);
+}
 

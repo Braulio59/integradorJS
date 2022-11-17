@@ -68,7 +68,7 @@ const renderProducto = (producto) => {
             </div>
             <div class="product-bid">
                 <span>$${bid}</span>
-                <button onclick="agregarAlCarrito(${id})">Agregar</button>
+                <button onclick="agregarAlCarrito(${id})" class="btn-agregar">Agregar</button>
             </div>
         </div>
     </div>`
