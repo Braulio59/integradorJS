@@ -116,11 +116,15 @@
         <section id="products">
             <h2>Elegí tu Favorito!</h2>
             <div class="categories">
-                <button class="category active" data-category="all">🍷Todas</button>
-                <button class="category" data-category="malbec">Malbec</button>
-                <button class="category" data-category="cabernet">Cabernet</button>
-                <button class="category" data-category="rose">Rose</button>
-                <button class="category" data-category="blanc">Blanco</button>
+                <button class="category active" id="btnAll" data-category="all"
+                    onclick="selectCategory(event)">🍷Todas</button>
+                <button class="category" id="btnMalbec" data-category="malbec"
+                    onclick="selectCategory(event)">Malbec</button>
+                <button class="category" id="btnCabernet" data-category="cabernet"
+                    onclick="selectCategory(event)">Cabernet</button>
+                <button class="category" id="btnRose" data-category="rose" onclick="selectCategory(event)">Rose</button>
+                <button class="category" id="btnBlanc" data-category="blanc"
+                    onclick="selectCategory(event)">Blanco</button>
             </div>
 
             <!-- products -->
