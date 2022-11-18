@@ -41,10 +41,10 @@
 
                     <div class="cart-total">
                         <p>Total:</p>
-                        <span class="total">0.00 </span>
+                        <span class="total" id="cart-total">0.00 </span>
                     </div>
                     <button class="btn-buy">Comprar</button>
-                    <button class="btn-delete">Vaciar carrito</button>
+                    <button class="btn-delete" onclick="vaciarCarrito()">Vaciar carrito</button>
                 </div>
                 <div class="overlay"></div>
             </nav>
@@ -124,7 +124,7 @@
 
             <!-- products -->
             <div class="products-container"></div>
-            <button class="btn-load">Ver Mas</button>
+            <button class="btn-load" onclick="mostrarMas()">Ver Mas</button>
         </section>
     </main>
     <div class="footer-title">
