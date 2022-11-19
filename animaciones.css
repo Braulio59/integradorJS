@@ -58,13 +58,11 @@ animacion HOVER */
 } 
 
 /* BOTONES DEL CARRITO */
-.quantity-handler {
-    transition: all 0.2s ease-in;
-}
 
-.quantity-handler:hover {
-    cursor: pointer;
-    background-color: var(--background);
+.cart-card i:hover {
+    color: var(--background);
+    background-color: var(--btn-secundari);
+    transform: scale(1.2);
     transition: all 0.2s ease-in;
 }
 

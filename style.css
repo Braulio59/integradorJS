@@ -238,14 +238,15 @@ header {
     color: var(--btn-secundari);
 } 
 
-.up {
-    border: 1px solid var(--background);
-}
+.cart-card i {
+    cursor: pointer;
+    color: var(--text-black);
+    background-color: var(--background);
+    border-radius: 100%;
+    transform: scaleX(1.1);
+}  
 
-.down {
-    background-color: var(--btn-secundari);
-    border: 1px solid var(--background);
-}
+
 
 .divider {
     margin-top: 20px;
@@ -691,4 +692,87 @@ main {
             flex-direction: row;
             gap: 20px;
             
+        } 
+
+
+        /* pagina de login */ 
+        .login-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url(./assets/Two-cups-of-red-wine-food_3840x2160.jpg); 
+            background-repeat: no-repeat;  
+            background-size: cover;
+        
         }
+        
+        .login {        
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;   }  
+        
+        form {
+            display: flex;
+            flex-direction: column;
+        } 
+        
+        input {
+            height: 40px;
+            width: 20rem;
+            color: black;
+            border-radius: 1.5px;
+            background: rgba(199, 168, 168, 0.25);
+            backdrop-filter: blur( 4px );
+            -webkit-backdrop-filter: blur( 4px );
+            border: 2px solid rgba( 255, 255, 255, 0.18 );
+        } 
+        
+        ::placeholder {
+            color: #121314;
+        }
+        
+        input:focus {
+            outline: none;
+        }
+        
+        .btning {
+            margin-top: 60px;
+            background-color: rgba(230, 229, 229, 0.6) ;
+            border: none;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 1s ease;
+        }
+        
+        .btning:hover {
+            background: #a5a4a4;
+            color: whitesmoke;
+        } 
+        
+        .login-title {
+            text-transform: uppercase;
+            margin-bottom: 100px;
+            font-weight: 900;
+            animation-name: rebotartitulo;
+            animation-duration: 5s;
+            animation-iteration-count: infinite; 
+            animation-direction: alternate; 
+        } 
+
+        .login-title-2 {
+            text-shadow: 1px 1px #FCFDFD;
+            margin-top: 30px;
+            font-size: 20px;
+        }   
+
+        .btn-register i {
+            color: var(--text-black);
+            background-color: var(--background);
+            border-radius: 100%;
+            font-size: 50px;
+            margin-top: 30px;
+        }
+
